@@ -1,0 +1,10 @@
+declare module 'node:test' {
+  export function describe(name: string, fn: () => void): void;
+  export function it(name: string, fn: () => void): void;
+}
+
+declare module 'node:assert/strict' {
+  export function equal(actual: unknown, expected: unknown): void;
+  export function deepEqual(actual: unknown, expected: unknown): void;
+  export function ok(value: unknown): void;
+}
