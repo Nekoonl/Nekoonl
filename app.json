@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Rush Coach",
+    "slug": "rush-coach",
+    "scheme": "rushcoach",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.rushcoach.app",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "POST_NOTIFICATIONS"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Rush Coach usa tu ubicación para medir distancia, ritmo y guardar tus rutas privadas."
+        }
+      ],
+      "expo-secure-store",
+      "expo-notifications"
+    ],
+    "extra": {
+      "router": { "origin": false },
+      "eas": { "projectId": "local-dev" }
+    }
+  }
+}
